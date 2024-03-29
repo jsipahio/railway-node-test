@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lab 20a</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+  <script src="tester.js"></script> 
+</head>
+<body>
+    <article class="section">
+      <form id="stockForm">
+        <h1 class="title is-4">Test Fetch (PUT/POST/DELETE)</h1>
+
+        <label class="label">ID</label>
+        <input class="input" type="text" value="1" id="id" name="id">
+        
+        <label class="label">Name (English)</label>
+        <input class="input" type="text" value="Bulbasaur" id="englishName" name="englishName">        
+        
+        <label class="label">Name (French)</label>
+        <input class="input" type="text" value="Bulbizarre" id="frenchName" name="frenchName"> 
+        
+        <label class="label">Type 1</label>
+        <input class="input" type="text" value="Grass" id="type1" name="type1"> 
+        
+        <label class="label">Type 2</label>
+        <input class="input" type="text" value="Poison" id="type2" name="type2"> 
+        
+        <label class="label">HP</label>
+        <input class="input" type="text" value="45" id="hp" name="hp">
+
+        <label class="label">Attack</label>
+        <input class="input" type="text" value="49" id="attack" name="attack">
+
+        <label class="label">Defense</label>
+        <input class="input" type="text" value="49" id="defense" name="defense">
+
+        <label class="label">Sp. Attack</label>
+        <input class="input" type="text" value="65" id="spAttack" name="spAttack">
+
+        <label class="label">Sp. Defense</label>
+        <input class="input" type="text" value="65" id="spDefense" name="spDefense">      
+
+        <label class="label">Speed</label>
+        <input class="input" type="text" value="45" id="speed" name="speed">              
+        
+        <div class="box">
+            <button class="button is-info" id="btnInsert">
+              Insert (HTTP POST)
+            </button>
+            <button class="button is-primary" id="btnUpdate">
+              Update (HTTP PUT)
+            </button>        
+            <button class="button is-danger" id="btnDelete">
+              Delete (HTTP DELETE)
+            </button>           
+        </div>
+    
+        <div class="notification is-warning" id="notifier"></div>
+      </form>
+        
+
+
+
+    </article>
+
+</body>
+</html>   
