@@ -13,6 +13,6 @@ pokeRouter.getPokemonByID(pokedex, app);
 pokeRouter.createNewPokemon(pokedex, app);
 
 let port = 8080;
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log("serving on port", port);
 })
